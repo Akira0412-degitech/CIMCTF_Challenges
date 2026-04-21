@@ -1,8 +1,13 @@
 <?php
 // go to FLAGISHERE.php
 if (isset($_GET['page'])) {
-    $page = $_GET['page'];
-    echo '<a href="index.php" style="position:fixed;top:20px;left:20px;padding:10px 20px;background:#333;color:#fff;text-decoration:none;border-radius:6px;font-family:Arial,sans-serif;font-size:0.9rem;">&#8592; Back</a>';
+   $page = $_GET['page'];
+
+    if (strpos($page, '..') !== false || strpos($page, '/') === 0) {
+        http_response_code(403);
+        exit('Access denied.');
+    }
+
     include($page . '.php');
 } else {
 ?>
