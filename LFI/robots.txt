@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /
+
+# DO YOU KNOW LOCAL FILE INCLUSION? LOOK AT index.php CODE!!
