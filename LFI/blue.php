@@ -11,5 +11,7 @@
         }
     </style>
 </head>
-<body></body>
+<body>
+    <a href="/" style="position:fixed;top:20px;left:20px;padding:10px 24px;background:#fff;color:#2980b9;border-radius:6px;font-weight:bold;text-decoration:none;font-family:Arial,sans-serif;">&#8592; Back</a>
+</body>
 </html>
